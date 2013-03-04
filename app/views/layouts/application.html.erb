@@ -12,7 +12,8 @@
   <body class="<%= controller_name %> <%= action_name %>">
     <div id="container" class="container">
       <header>
-        <%= render 'layouts/navigation' %>
+      <%# removing devise default log_in_out html #>
+      <%#  render 'layouts/navigation'  %>
         <%= render 'layouts/messages' %>
       </header>
       <div id="main" role="main">
