@@ -1,5 +1,12 @@
 <head>
   <title>Spring Lab</title>
+<!-- nivo slider -->
+<script type="text/javascript">
+  $(window).load(function() {
+  $('#slider').nivoSlider();
+  });
+</script>
+  <!-- nivo slider -->
 </head>
 <body>
 <!--Header Begin-->
@@ -23,7 +30,19 @@
 <div id="toprow">
   <div class="center">
     <div id="cubershadow">
-      <div id="cu3er-container"> <a href="http://www.adobe.com/go/getflashplayer"> <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="" /> </a> </div>
+<!-- nivo slider -->
+<div class="slider-wrapper">
+  <div id="slider" class="nivoSlider">
+    <img src="assets/toystory.jpg" alt="" />
+    <a href="http://dev7studios.com"><img src="assets/up.jpg" alt="" title="#htmlcaption" /></a>
+    <img src="assets/walle.jpg" alt="" title="This is an example of a caption" />
+    <img src="assets/nemo.jpg" alt="" />
+  </div>
+</div>
+<div id="htmlcaption" class="nivo-html-caption">
+  <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+</div>
+<!-- nivo slider -->
     </div>
   </div>
 </div>
@@ -60,7 +79,7 @@
   <div class="textbox">
     <h1>Lorem ipsum dolor sit amet</h1>
     <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget consequat odio. Proin sapien erat, venenatis ut mollis vel, pulvinar in eros. Cras vel felis massa, a vulputate leo. Donec posuere, orci in congue faucibus, erat metus feugiat augue, congue ultricies orci nulla in velit. Morbi pulvinar, justo nec suscipit bibendum, nisl est cursus orci, non sagittis ipsum enim sed orci. Sed imperdiet tristique condimentum. Proin eget ipsum odio, in adipiscing leo. In hac habitasse platea dictumst. Maecenas id dui non nisl lobortis porta sed sed mi. Nunc molestie tempor semper. Aenean non eros risus. Maecenas tincidunt vehicula lectus, id posuere orci consequat eget. Nam dictum ante vitae turpis interdum accumsan. Nullam est libero, porttitor vitae venenatis et, commodo viverra turpis. Ut aliquam facilisis dignissim.</a> </div>
-  <div class="feed"> <a href="#"><img alt="" src="images/twitter.jpg" height="80" width="75" /></a> <a href="#"><img alt="" src="images/rss.jpg" height="80" width="67" /></a> </div>
+  <div class="feed"> <a href="#"><img alt="" src="assets/twitter.jpg" height="80" width="75" /></a> <a href="#"><img alt="" src="assets/rss.jpg" height="80" width="67" /></a> </div>
 </div>
 <!--BottomRow END-->
 <!--Footer Begin-->
