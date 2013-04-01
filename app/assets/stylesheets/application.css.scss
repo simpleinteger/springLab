@@ -11,27 +11,26 @@
  *= require_self
  *= require_tree .
 */
-.brand {
-  float: left;
-  padding-right: 8px;
+body{ 
+  background-color: #000000; 
+  text-align:center;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-ul.nav {
-  list-style: none;
-  margin: 0 0 2em;
-  padding: 0;
+
+h1{
+  font-size: 40pt;
 }
-ul.nav li {
-  display: inline;
-}
-#flash_notice, #flash_alert {
-  padding: 5px 8px;
-  margin: 10px 0;
-}
-#flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
-}
-#flash_alert {
-  background-color: #FCC;
-  border: solid 1px #C66;
+
+.content{ 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 10px;
+  font-size: 16pt;
+  border-style:solid;
+  border-width:1px;
+  border-color: #FFFFFF;
+  width: 500px;
+  height: 500px;
 }
