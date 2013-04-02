@@ -1,4 +1,7 @@
 SpringLab::Application.routes.draw do
+  resources :heads
+
+
   authenticated :user do
     root :to => 'home#index'
   end
