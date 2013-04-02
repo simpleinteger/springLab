@@ -16,6 +16,7 @@ body{
   text-align:center;
   color: #FFFFFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image:url('1.jpg');
 }
 
 h1{
@@ -23,6 +24,7 @@ h1{
 }
 
 .content{ 
+  background-color: #000000;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
@@ -32,5 +34,5 @@ h1{
   border-width:1px;
   border-color: #FFFFFF;
   width: 500px;
-  height: 500px;
+  height: 300px;
 }
