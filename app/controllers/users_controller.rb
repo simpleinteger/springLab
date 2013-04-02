@@ -48,10 +48,10 @@ class UsersController < ApplicationController
         UserMailer.signup_confirmation(@user).deliver
         UserMailer.new_user_notification(@user).deliver
 
-        format.html { redirect_to @user, notice: 'Thank You For Signing Up' }
+        format.html { redirect_to root_path, notice: 'Thank You For Signing Up' }
         format.json { render json: @user, status: :created, location: @user }
       else
-        format.html { redirect_to "www.google.com", notice: 'error'  }
+        format.html { redirect_to root_path, notice: 'email already taken'  }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
