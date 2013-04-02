@@ -51,7 +51,7 @@ class UsersController < ApplicationController
         format.html { redirect_to root_path, notice: 'Thank You For Signing Up' }
         format.json { render json: @user, status: :created, location: @user }
       else
-        format.html { redirect_to root_path, notice: 'error'  }
+        format.html { redirect_to "www.google.com", notice: 'error'  }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
