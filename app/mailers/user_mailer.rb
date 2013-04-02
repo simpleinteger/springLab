@@ -9,7 +9,7 @@ class UserMailer < ActionMailer::Base
 
   def new_user_notification(user)
     @user = user
-    mail to: "patrickwu912@gmail.com", subject: "SpringLAB New User Notification"
+    mail to: "stevenr2d2@gmail.com", subject: "SpringLAB New User Notification"
   end
 end
 
