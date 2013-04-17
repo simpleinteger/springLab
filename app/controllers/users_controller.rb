@@ -45,8 +45,8 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
 
-#        UserMailer.signup_confirmation(@user).deliver
-#        UserMailer.new_user_notification(@user).deliver
+        UserMailer.signup_confirmation(@user).deliver
+        UserMailer.new_user_notification(@user).deliver
 
         format.html { redirect_to confirmation_path, notice: 'Thank You For Signing Up' }
         format.json { render json: @user, status: :created, location: @user }
