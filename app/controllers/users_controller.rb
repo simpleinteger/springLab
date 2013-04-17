@@ -45,13 +45,13 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
 
-        UserMailer.signup_confirmation(@user).deliver
-        UserMailer.new_user_notification(@user).deliver
+#        UserMailer.signup_confirmation(@user).deliver
+#        UserMailer.new_user_notification(@user).deliver
 
         format.html { redirect_to root_path, notice: 'Thank You For Signing Up' }
         format.json { render json: @user, status: :created, location: @user }
       else
-        format.html { redirect_to root_path, notice: 'email already taken'  }
+        format.html { redirect_to root_path, notice: "#{@user.errors.full_messages {|msg|} }"}
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
